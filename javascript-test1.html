@@ -1,0 +1,27 @@
+<!DOCTYPE html> 
+<html> 
+	<head><title>Javascript test</title>
+		<meta charset="utf-8">
+	</head> 
+	<body>
+		Hello 
+		<script>
+			var weekday = new Array(7);
+			weekday[0]=  "Sunday";
+			weekday[1] = "Monday";
+			weekday[2] = "Tuesday";
+			weekday[3] = "Wednesday";
+			weekday[4] = "Thursday";
+			weekday[5] = "Friday";
+			weekday[6] = "Saturday";
+			
+			var today = new Date();
+			var hourNow = today.getHours();
+			var minutesNow = today.getMinutes();
+			//alert(minutesNow);
+			var dayNow = weekday[today.getDay()];
+			document.write("World at " + hourNow + ":" + minutesNow + "hrs this fine " + dayNow);
+		</script>
+		
+	</body> 
+</html>
